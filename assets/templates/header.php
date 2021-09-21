@@ -1,5 +1,7 @@
 <?php
     include_once("assets/helpers/url.php");
+    include_once("assets/data/categories.php");
+    include_once("assets/data/posts.php");
 ?>
 
 <!DOCTYPE html>

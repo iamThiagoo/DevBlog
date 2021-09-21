@@ -11,16 +11,7 @@
     list-style: none;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    font-size: 62.5%
-}
-
-main{
-    margin-bottom: 30rem;
-}
-
-h1{
-    font-size: 3rem;
-    margin: 2rem 0;
+    font-size: 62.5%;
 }
 
 header, footer{
@@ -62,6 +53,48 @@ nav ul li a{
 nav ul li a:hover{
     color: rgb(107, 104, 104);
 }
+
+/* ===> MAIN <=== */
+main{
+    margin-bottom: 10rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+.title-container{
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.title-container h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.tags-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.tag-box{
+    background-color: rgb(22, 22, 22);
+    padding: 1rem;
+    border-radius: .8rem;
+    display: grid;
+    place-items: center;
+}
+
+.tag-box a{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+
 
 /* ===> FOOTER <=== */
 footer{
