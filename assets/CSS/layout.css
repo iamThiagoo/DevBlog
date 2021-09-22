@@ -2,6 +2,8 @@
 
 :root{
     --black: #0e0d0d;
+    --lightpurple: #8981d8;
+    --purple: #6058AC;
 }
 
 *{
@@ -14,12 +16,19 @@
     font-size: 62.5%;
 }
 
+h2{
+    font-size: 3.2rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
 header, footer{
     background: var(--black);
     width: 100%;
     color: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -27,13 +36,12 @@ header, footer{
 header{
     text-transform: uppercase;
     padding: 2rem;
+    justify-content: space-between;
 }
 
 #logo{
     width: 5rem;
-    position: absolute;
-    top: 1rem;
-    left: 10%;
+    margin-left: 5rem;
 }
 
 nav ul{
@@ -41,7 +49,7 @@ nav ul{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin: 1rem 0;
+    margin: 1rem 4rem;
 }
 
 nav ul li a{
@@ -51,7 +59,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: rgb(107, 104, 104);
+    color: var(--lightpurple);
 }
 
 /* ===> MAIN <=== */
@@ -59,21 +67,53 @@ main{
     margin-bottom: 10rem;
 }
 
-p{
-    font-size: 1.8rem;
-}
-
 .title-container{
+    min-width: 500px;
     text-align: center;
     margin: 4rem 0;
 }
 
 .title-container h1{
     font-size: 5rem;
+    margin-bottom: .5rem;
 }
 
-h2{
-    font-size: 3rem;
+.posts-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.post-box:first-child{
+    min-width: 100%;
+    margin-bottom: 4rem;
+}
+
+.post-box{
+    flex: 1 1 0;
+    margin-bottom: 2rem;
+}
+
+.post-box img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.post-box h2 a{
+    color: rgb(24, 23, 23);
+}
+
+.post-box h2 a:hover{
+    color: var(--purple);
+    transition: 1s;
+}
+
+.post-box p{
+    font-size: 1.5rem;
+    margin: .5rem 0 1.5rem 0;
 }
 
 .tags-container{
@@ -82,22 +122,26 @@ h2{
 }
 
 .tag-box{
-    background-color: rgb(22, 22, 22);
+    background-color: var(--black);
     padding: 1rem;
-    border-radius: .8rem;
+    border-radius: 1rem;
     display: grid;
     place-items: center;
 }
 
 .tag-box a{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 
-
+.tag-box:hover{
+    background-color: var(--purple);
+    transition: 1s;
+}
 
 /* ===> FOOTER <=== */
 footer{
     padding: 4rem 0;
     font-size: 3rem;
+    justify-content: center;
 }

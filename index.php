@@ -13,9 +13,7 @@
                     <h2>
                         <a href="<?= $BASE_URL?>/assets/data/post.php?id=<?= $post['id'] ?>"><?= $post["title"] ?></a>
                     </h2>
-                    <p>
-                        <a href="<?= $BASE_URL?>/assets/data/post.php?id=<?= $post['id'] ?>"><?= $post["description"] ?></a>
-                    </p>
+                    <p><?= $post["description"] ?></p>
                     <div class="tags-container">
                         <?php foreach($post["tags"] as $tag): ?>
                             <div class="tag-box">
