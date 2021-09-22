@@ -62,7 +62,7 @@ nav ul li a:hover{
     color: var(--lightpurple);
 }
 
-/* ===> MAIN <=== */
+/* ===> HOME <=== */
 main{
     margin-bottom: 10rem;
 }
@@ -137,6 +137,16 @@ main{
 .tag-box:hover{
     background-color: var(--purple);
     transition: 1s;
+}
+
+/* ==> POST <=== */
+#post-container{
+    background-color: gray;
+}
+
+.post-content h1{
+    font-size: 3rem;
+    margin: 2rem 0;
 }
 
 /* ===> FOOTER <=== */
