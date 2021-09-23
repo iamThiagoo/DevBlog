@@ -39,21 +39,25 @@
             </div>
         </div>
         <aside id="nav-container">
-            <h3>Tags</h3>
-            <div class="tags">
-                <ul>
-                    <?php foreach($currentPost["tags"] as $tag): ?>
-                        <li><a href="#"><?= $tag ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
+            <div class="nav-box">
+                <h3>Tags</h3>
+                <div class="tags">
+                    <ul>
+                        <?php foreach($currentPost["tags"] as $tag): ?>
+                            <li><a href="#"><?= $tag ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
             </div>
-            <h3>Linguagens</h3>
-            <div class="tags">
-                <ul>
-                    <?php foreach($linguagens as $category): ?>
-                        <li><a href="#"><?= $category ?></a></li>
-                    <?php endforeach; ?>
-                </ul>
+            <div class="nav-box">
+                <h3>Linguagens</h3>
+                <div class="tags">
+                    <ul>
+                        <?php foreach($linguagens as $category): ?>
+                            <li><a href="#"><?= $category ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
             </div>
         </aside>
     </main>

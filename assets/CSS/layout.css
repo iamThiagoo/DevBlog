@@ -14,10 +14,20 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     font-size: 62.5%;
+    outline: none;
 }
 
 *:hover{
     transition: .7s;
+}
+
+.sr-only{
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    margin: -1px;
+    clip-path: rect(0,0,0,0);
+    overflow: hidden;
 }
 
 h2{
@@ -185,6 +195,10 @@ aside{
     width: 100%;
 }
 
+.nav-box{
+    margin-bottom: 3rem;
+}
+
 aside h3{
     background: var(--black);
     color: #fff;
@@ -197,16 +211,59 @@ aside h3{
 }
 
 aside ul li{
-    margin: .8rem 0;
+    line-height: 2;
 }
 
 aside ul li a{
     font-size: 1.4rem;
-    color: var(--lightpurple);
+    color: var(--purple);
 }
 
 aside ul li a:hover{
     color: var(--black);
+}
+
+/* ===> ÁREA DE CONTATO <=== */
+#contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content{
+    padding-top: 5rem;
+}
+
+.contact-content h1{
+    font-size: 3.6rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.input-area input, textarea{
+    border: 2px solid gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-width: 500px;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+textarea{
+    height: 200px;
+    min-width: 100%;
+    resize: none;
+}
+
+#submit{
+    border: 0;
+    cursor: pointer;
+    background: var(--lightpurple);
+    color: #fff;
+}
+
+#submit:hover{
+    background: var(--purple);
 }
 
 /* ===> FOOTER <=== */
