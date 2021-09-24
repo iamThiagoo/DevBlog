@@ -4,7 +4,7 @@
     <main id="contact-container">
         <div class="contact-content">
             <h1>Contato</h1>
-            <form action="assets/data/message.php" method="POST">
+            <form action="assets/data/email.php" method="POST">
                 <div class="input-area">
                     <label class="sr-only" for="name">Digite o seu nome</label>
                     <input type="text" name="name" id="name" placeholder="Seu nome">
