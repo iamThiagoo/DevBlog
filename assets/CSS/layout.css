@@ -161,7 +161,7 @@ main{
     padding-top: 3rem;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 8rem;
+    margin-bottom: 1rem;
 }
 
 .post-content{
@@ -268,7 +268,7 @@ textarea{
 
 /* ===> FOOTER <=== */
 footer{
-    padding: 4rem 0;
+    padding: 2rem 0;
     font-size: 3rem;
     justify-content: center;
 }

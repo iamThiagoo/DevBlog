@@ -1,0 +1,43 @@
+@media (max-width: 468px){
+    header{
+        width: 100%;
+        justify-content: center;
+    }
+    #logo{
+        margin: 0;
+        left: 0;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .title-container{
+        min-width: 0;
+    }
+    .posts-container{
+        width: 100%;
+        padding: 2rem;
+    }
+    .post-box{
+        flex: 100% 1 0;
+        margin: 0 0 4rem 0;
+    }
+    .post-box:last-child{
+        margin: 0;
+    }
+
+    /* POSTS */
+    #post-container{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        grid-template-areas: "main"
+        "sidebar";
+    }
+    .post-content{
+        width: 100%;
+        padding: 1rem;
+    }
+}
